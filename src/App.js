@@ -1,22 +1,12 @@
 import './App.css';
-import Gallery from './Gallery';
+import Nav from './component/Nav';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <nav className='App-nav'>
-          <ol>
-            <li><a href='./App.js'>Home</a></li>
-            <li><a href='../public/index.html'>Gallery</a></li>
-            <li><a href='#'>About me</a></li>
-            <li className='badran'>Developer Badran</li>
-            <li className='li-contact'><a href='#'>Contact me</a></li>
-            <img src='Badr.jpg'></img>
-          </ol>
-        </nav>
-      </header>
+        <Nav/>
       <body className="App-body">
+        <h1>App</h1>
       </body>
     </div>
   );
