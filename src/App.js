@@ -1,4 +1,5 @@
 import './App.css';
+import Gallery from './Gallery';
 
 function App() {
   return (
@@ -6,11 +7,11 @@ function App() {
       <header className="App-header">
         <nav className='App-nav'>
           <ol>
-            <li><a href=''>Home</a></li>
-            <li><a href=''>Gallery</a></li>
-            <li><a href=''>About me</a></li>
+            <li><a href='./App.js'>Home</a></li>
+            <li><a href='../public/index.html'>Gallery</a></li>
+            <li><a href='#'>About me</a></li>
             <li className='badran'>Developer Badran</li>
-            <li className='li-contact'><a href=''>Contact me</a></li>
+            <li className='li-contact'><a href='#'>Contact me</a></li>
             <img src='Badr.jpg'></img>
           </ol>
         </nav>
