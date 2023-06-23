@@ -10,6 +10,7 @@ function Nav() {
                     <li><Link to={'/gallery'}>Gallery</Link></li>
                     <li><Link to={'/about-me'}>About me</Link></li>
                     <li className='badran'>Developer Badran</li>
+                    
                     <li className='li-contact'><Link to={'/Contact-me'}>Contact me</Link></li>
                     <img src='Badr.jpg' alt='Badr'></img>
                 </ol>
