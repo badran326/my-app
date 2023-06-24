@@ -4,8 +4,9 @@ import Nav from '../component/Nav';
 function AboutMe() {
   return (
     <div>
-      <Nav/>
-      <h1>About Me</h1>
+      <header>
+        <Nav/>
+      </header>
     </div>
   );
 }

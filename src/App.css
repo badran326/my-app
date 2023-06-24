@@ -1,3 +1,6 @@
+* {
+  color: #FFF;
+}
 .App {
   text-align: center;
 }
@@ -32,9 +35,26 @@
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   text-align: start;
   background-color: aqua;
 }
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 
 nav ol {
   display: flex;
@@ -65,9 +85,66 @@ a {
   font-size: medium;
   text-decoration: none;
 }
-img {
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+}
+.nav-img {
   width: 40px;
   height: 40px;
   align-self: center;
   margin-right: 100px;
+}
+.slider-img-div{
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.slider-img-div .slider-img {
+  height: 300px;
+  align-self: center;
+}
+
+.alice-carousel__prev-btn-wrapper {
+  text-align: center;
+}
+
+p span {
+  color: aliceblue;
+}
+/* ---------------------------------- */
+.container .photos-div{
+  width: 100%;
+  display: inline-block;
+}
+
+.container .photos-div div {
+  width: 25%;
+  margin: 8px;
+  padding: 1px;
+  display: inline-block;
+  border: yellow solid 1px;
+  border-radius: 5%;
+  box-shadow: 0 2px 4px #61dafb;
+}
+
+.container .photos-div div:hover {
+  width: 25%;
+  margin: 8px;
+  padding: 1px;
+  display: inline-block;
+  border: #61dafb solid 1px;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px yellow;
+}
+
+.container .photos-div img {
+  width: 100%;
+  background-color: gray;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom: #61dafb solid 2px;
 }
