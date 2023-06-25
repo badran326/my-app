@@ -117,23 +117,26 @@ p span {
 }
 /* ---------------------------------- */
 .container .photos-div{
-  width: 100%;
+  width: 40%;
   display: inline-block;
 }
 
 .container .photos-div div {
-  width: 25%;
-  margin: 8px;
+  box-sizing: border-box;
+  width: 45%;
+  margin: 2%;
   padding: 1px;
   display: inline-block;
   border: yellow solid 1px;
   border-radius: 5%;
   box-shadow: 0 2px 4px #61dafb;
+  background-color: black;
 }
 
 .container .photos-div div:hover {
-  width: 25%;
-  margin: 8px;
+  box-sizing: border-box;
+  width: 45%;
+  margin: 2%;
   padding: 1px;
   display: inline-block;
   border: #61dafb solid 1px;
@@ -142,9 +145,19 @@ p span {
 }
 
 .container .photos-div img {
+  box-sizing: border-box;
   width: 100%;
-  background-color: gray;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   border-bottom: #61dafb solid 2px;
+}
+
+.container .photos-div div h4 {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 8px;
+}
+
+.container .photos-div div h4 a{
+  color: blue;
 }

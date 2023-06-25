@@ -1,5 +1,6 @@
 import '../App.css';
 import Nav from '../component/Nav';
+import Card from '../component/cards';
 import img1 from '../imgs/programming-skills.png';
 import img2 from '../imgs/Badran.jpeg';
 import img3 from '../imgs/IMG-20230521-WA0074.png';
@@ -12,20 +13,7 @@ function Gallery() {
       </header>
       <body>
         <div className='container'>
-          <div className='photos-div'>
-          <div>
-            <img src={img1}/>
-            <h4>My programming Photos</h4>
-          </div>
-          <div>
-            <img src={img2}/>
-            <h4>My Race Photos</h4>
-          </div>
-          <div>
-            <img src={img3}/>
-            <h4>My Team Photos</h4>
-          </div>
-          </div>
+          <Card img1={img1} img2={img3} img3={img2} title1='My programming Photos' title2='My Team Photos' title3='My Race Photos'/>
         </div>
       </body>
     </div>
